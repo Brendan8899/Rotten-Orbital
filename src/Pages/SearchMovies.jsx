@@ -68,7 +68,7 @@ export const SearchMovies = () => {
           value={query}
           onChange={changeHandler}
         />
-        <Button variant="secondary" type="submit">
+        <Button variant="secondary" type="submit" disabled={!query.trim()}>
           Search
         </Button>
       </Form>

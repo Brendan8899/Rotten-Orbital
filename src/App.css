@@ -80,7 +80,10 @@ button {
   border-radius: 20px;
 }
 
-
+.button-container {
+  display: flex;
+  gap: 10px; /* Adjust the value to control the spacing between buttons */
+}
 
 .link-btn {
   margin: 0.5rem 0;
@@ -189,7 +192,128 @@ h2 {
 
 }
 
+.comment-title {
+  text-align: left;
+  margin-left: 0;
+  font-size: 1.5rem;
+}
 
+.comment-section-container {
+  min-height: 100vh;
+  min-width: 160vh;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.comment-input {
+  border: 1px solid #000000;
+  width: 80%;
+  height: 120px;
+  resize: vertical;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.comment-section-container .image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.submit-button {
+  background-color: #14B2E7;
+  color: white;
+  border-radius: 20px;
+}
+
+.star-rating {
+  font-size: 24px;
+  color: #ccc;
+}
+
+.star-rating .star {
+  display: inline-block;
+  margin-right: 4px;
+  width: 24px;
+  height: 24px;
+  background-image: url('star-empty.png');
+  background-size: cover;
+}
+
+.star-rating .star.filled {
+  background-image: url('star-filled.png');
+}
+
+.details-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.rating-container {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.overview {
+  width: 80%;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+}
+
+.comment-card {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.comment-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.publish-date {
+  font-size: 0.9em;
+}
+
+.comment-card-content {
+  text-align: left;
+}
+
+.comment-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 100px; /* Adjust the height as needed */
+}
+
+.comment-card-buttons {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.comment-card-button {
+  margin-left: 8px;
+  background-color: white;
+  border: none;
+  color: black;
+}
 
 
 @media only screen and (max-width: 768px) {
@@ -212,5 +336,7 @@ h2 {
     /* Add any additional styles for smaller screens */
   }
 }
+
+
 
 

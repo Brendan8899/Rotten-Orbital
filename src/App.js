@@ -6,6 +6,7 @@ import { Register } from './Pages/Register';
 import { ForgetPassword } from './Pages/ForgetPassword';
 import { Route, Routes } from "react-router-dom";
 import { SearchMovies } from './Pages/SearchMovies';
+import { CommentSection } from "./Pages/CommentSection";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/ForgetPassword" element={<ForgetPassword />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/SearchMovies" element={<SearchMovies />} />
+        <Route path="/CommentSection" element={<CommentSection/>} />
       </Routes>
       
     </div>
